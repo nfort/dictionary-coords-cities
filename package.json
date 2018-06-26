@@ -1,0 +1,22 @@
+{
+  "name": "dictionary-coords-cities",
+  "version": "1.0.0",
+  "description": "",
+  "main": "parseCities.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nfort/dictionary-coords-cities.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nfort/dictionary-coords-cities/issues"
+  },
+  "homepage": "https://github.com/nfort/dictionary-coords-cities#readme",
+  "dependencies": {
+    "libxmljs": "^0.19.0"
+  }
+}
