@@ -240,5 +240,5 @@ async function parseXMLCities() {
 }
 
 
-// parseCities();
+parseCities();
 parseXMLCities();
