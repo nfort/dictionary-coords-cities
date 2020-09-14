@@ -41,6 +41,10 @@ const xmlCities = [
     {
         id: 36185832,
         name: 'Sovetskiy'
+    },
+    {
+        id: 166155507,
+        name: 'Orenburg',
     }
 ];
 
@@ -173,6 +177,38 @@ const cities = [
         id: 1701435,
         name: 'Yaroslavl'
     },
+    {
+        id: 2538203,
+        name: 'Tula'
+    },
+    {
+        id: 2635526,
+        name: 'Yoshkar-Ola',
+    },
+    {
+        id: 3374548,
+        name: 'Cheboksary',
+    },
+    {
+        id: 1853866,
+        name: 'Astrakhan',
+    },
+    {
+        id: 7261645,
+        name: 'Tomsk',
+    },
+    {
+        id: 1550512,
+        name: 'Barnaul',
+    },
+    {
+        id: 1312868,
+        name: 'Kemerevo',
+    },
+    {
+        id: 1704857,
+        name: 'Vladivostok',
+    }
 ];
 
 function parseCity(city) {
@@ -181,7 +217,8 @@ function parseCity(city) {
             .then(res => {
                 const polygons = res.geometries[0].coordinates.map((item, i) => ({
                     id: city.id + i,
-                    is_exclusion: true,
+                    is_exclusion: false,
+                    editable: true,
                     points: item[0].map(c => ({ lng: c[0], lat: c[1] }))
                 }));
 
@@ -218,7 +255,8 @@ function parseXMLCity(city) {
 
                 const polygons = [{
                     id: city.id,
-                    is_exclusion: true,
+                    is_exclusion: false,
+                    editable: true,
                     points,
                 }];
 

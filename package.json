@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/nfort/dictionary-coords-cities#readme",
   "dependencies": {
-    "libxmljs": "^0.19.0"
+    "csv-parser": "^2.3.3",
+    "libxmljs": "^0.19.0",
+    "node-fetch": "^2.6.1",
+    "node-open-geocoder": "^4.0.1"
   }
 }
